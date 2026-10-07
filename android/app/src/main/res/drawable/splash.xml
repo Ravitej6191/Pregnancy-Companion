@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    windowBackground shown while WebView loads.
+    Replicates the React SplashScreen exactly:
+      - Light pink gradient background (#FFD6E0 → #FFF5F7 → #FFE8F0)
+      - KSIcon centered (pink rounded square + heart + KS)
+    When React renders its SplashScreen on top, it is pixel-identical → zero flash.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient background matching React splash -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#FFD6E0"
+                android:centerColor="#FFF5F7"
+                android:endColor="#FFE8F0" />
+        </shape>
+    </item>
+
+    <!-- Full KSIcon centered — identical to React KSIcon at 108dp -->
+    <item
+        android:width="108dp"
+        android:height="108dp"
+        android:gravity="center"
+        android:drawable="@drawable/ic_ks_icon_full" />
+
+</layer-list>

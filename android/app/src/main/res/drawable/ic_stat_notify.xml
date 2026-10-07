@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Notification small icon — must be MONOCHROME (white on transparent only).
+    Matches the KS heart brand: heart outline + KS letters, all white.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Heart outline -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.4"
+        android:pathData="M12,20 C6,16 2,13 2,8.5 C2,5.5 4.2,3.5 6.5,3.5 C8,3.5 9.2,4.3 12,6.5 C14.8,4.3 16,3.5 17.5,3.5 C19.8,3.5 22,5.5 22,8.5 C22,13 18,16 12,20 Z" />
+
+    <!-- K: vertical stem -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M7,8 L7,16" />
+
+    <!-- K: upper arm -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M7,12 L11,8" />
+
+    <!-- K: lower arm -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M7,12 L11,16" />
+
+    <!-- S: double-arc -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M17,9 C17,7.5 13,7.5 13,9 C13,10.5 17,11.5 17,13 C17,14.5 13,14.5 13,13" />
+
+</vector>

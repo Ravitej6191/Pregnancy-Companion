@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  background-color: #FFF5F7;
+  color: #4A2533;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFD6E0;
+  border-radius: 4px;
+}
+
+/* Safe area support */
+:root {
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+  /* bottom nav height (64px buttons+padding) + safe area inset + 4px buffer */
+  --main-pb: calc(68px + var(--safe-bottom) + 4px);
+  /* toast sits just above the nav */
+  --toast-bottom: calc(72px + var(--safe-bottom));
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+/* main scroll area clears the bottom nav + safe area on any device */
+.main-scroll-pb {
+  padding-bottom: var(--main-pb);
+}
+
+/* Prevent text selection on tap */
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Give the native date/time picker icon room — prevents arrow crowding the right border */
+input[type="date"],
+input[type="time"] {
+  padding-right: 40px !important;
+}

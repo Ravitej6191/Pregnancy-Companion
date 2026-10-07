@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Full KSIcon replication for use as windowBackground splash center piece.
+    Matches the React KSIcon exactly:
+      - Pink rounded square (#FF8FAB)
+      - White heart watermark (30% opacity)
+      - White KS bold text (stroke-based, matching weight-900 Poppins)
+    108×108dp viewport
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Pink rounded square background (22% radius = ~24dp on 108) -->
+    <path
+        android:fillColor="#FF8FAB"
+        android:pathData="M24,0 L84,0 Q108,0 108,24 L108,84 Q108,108 84,108 L24,108 Q0,108 0,84 L0,24 Q0,0 24,0 Z" />
+
+    <!-- White heart watermark — 30% opacity, same path as KSIcon -->
+    <path
+        android:fillColor="#4DFFFFFF"
+        android:pathData="M54,88 C30,70 10,55 10,36 C10,22 20,12 33,12 C40,12 46,17 54,26 C62,17 68,12 75,12 C88,12 98,22 98,36 C98,55 78,70 54,88 Z" />
+
+    <!-- K: vertical stem -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:pathData="M26,28 L26,80" />
+
+    <!-- K: upper arm -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:pathData="M26,54 L52,28" />
+
+    <!-- K: lower arm -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:pathData="M26,54 L52,80" />
+
+    <!-- S: double-arc -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M80,36 C80,26 58,26 58,38 C58,50 80,55 80,68 C80,78 58,78 58,70" />
+
+</vector>

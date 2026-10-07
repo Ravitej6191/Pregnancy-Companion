@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    KS heart icon — used as windowSplashScreenAnimatedIcon (system splash on Android 12+).
+    Same design as the launcher adaptive icon.
+    200×200 viewport, all on a #FF8FAB pink background via windowSplashScreenBackground.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Heart — white, 30% opacity -->
+    <path
+        android:fillColor="#4DFFFFFF"
+        android:pathData="M100,162 C60,130 18,105 18,72 C18,48 36,33 58,33 C71,33 81,42 100,58 C119,42 129,33 142,33 C164,33 182,48 182,72 C182,105 140,130 100,162 Z" />
+
+    <!-- K: vertical stem -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:pathData="M40,46 L40,154" />
+
+    <!-- K: upper arm -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:pathData="M40,100 L88,46" />
+
+    <!-- K: lower arm -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:pathData="M40,100 L88,154" />
+
+    <!-- S: double-arc -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M158,64 C158,46 110,46 110,66 C110,84 158,94 158,114 C158,134 110,134 110,120" />
+
+</vector>
